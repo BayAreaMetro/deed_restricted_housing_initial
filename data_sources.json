@@ -1,0 +1,58 @@
+[{
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/20150107_CHPC_LA_County_and_Bay_Area_CalHFA_Properties_clean.csv",
+    "shortname": "CalHFA",
+    "units_column": "Total_Units",
+    "column_map": {
+        "column_name": ["street_number", "street_name", "street_ending", "city_", "5 digit_zip code", "apn_", "assisted_units"],
+        "column_type": ["street_number", "street_name", "street_suffix", "city", "zip_code", "apn", "units"]
+    }
+}, {
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/20150107_CHPC_LA_County_and_Bay_Area_HCD_Properties.csv",
+    "shortname": "HCD",
+    "units_column": "AssistedUnits",
+    "column_map": {
+        "column_name": ["streetending", "streetname", "streetnumber", "city", "county", "totalunits"],
+        "column_type": ["street_suffix", "street_name", "street_number", "city", "county", "units"]
+    }
+}, {
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/housing_marisa.csv",
+    "shortname": "Marisa",
+    "units_column": "TOTALUNITS",
+    "column_map": {
+        "column_name": ["match_addr", "street", "city", "zip", "project", "totalunits"],
+        "column_type": ["full_address", "street_name", "city", "zip_code", "property_name", "units"]
+    }
+}, {
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/HUD_LIHTC_Projects_MTC.csv",
+    "shortname": "LIHTC",
+    "units_column": "TOTAL_UNIT",
+    "column_map": {
+        "column_name": ["name", "name", "latitude", "longitude", "msa", "total_unit"],
+        "column_type": ["property_name", "address", "latitude", "longitude", "msa", "units"]
+    }
+}, {
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/NHPD_Extract_04_12_2012_MTC_Local.csv",
+    "shortname": "NHPD",
+    "units_column": "TotalUnits",
+    "column_map": {
+        "column_name": ["propertyname", "address", "zipcode", "city", "totalunits", "latitude", "longitude"],
+        "column_type": ["property_name", "address", "zip_code", "city", "units", "latitude", "longitude"]
+    }
+}, {
+    "url": "https://data.sfgov.org/api/views/nj3x-rw36/rows.csv",
+    "shortname": "inclusionary_sf",
+    "units_column": "Total BMRs in this Building or Phase",
+    "column_map": {
+        "column_name": ["building name","planning approval street number","planning approval street name","mapping address","total bmrs on-site","location"],
+        "column_type": ["property_name","street_number","street_name","full_address","units","latlong"]
+    }
+}, {
+    "url": "https://s3-us-west-2.amazonaws.com/landuse/housing/TCAC_CHPC_AffordableHousingData_Full010215_carriagefixed.csv",
+    "units_column": "S8_Asst_Un",
+    "shortname" : "TCAC",
+    "column_map": {
+        "column_name": ["address", "property", "city", "county", "latitude", "longitude", "total_unit"],
+        "column_type": ["address", "property_name", "city", "county", "latitude", "longitude", "units"]
+    }
+}]
+
