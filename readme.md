@@ -8,11 +8,11 @@ Data sources on deed restricted affordable housing the bay area area listed in d
 
 ##Methods
 
-1 Conform each source to the same schema (`conform.py`)
-2 Geocode full addresses for which there are no latitude and longitude in the source ('geocode.py')
-3 Deduplicate records ('deduplicate.py')
-4 Summarize overlap ('summarize.py')
-5 Output chosen records with location and unit based on a heuristic ('get_units.py')
+1. Conform each source to the same schema (`conform.py`)
+2. Geocode full addresses for which there are no latitude and longitude in the source ('geocode.py')
+3. Deduplicate records ('deduplicate.py')
+4. Summarize overlap ('summarize.py')
+5. Output chosen records with location and unit based on a heuristic ('get_units.py')
 
 ##Result
 
