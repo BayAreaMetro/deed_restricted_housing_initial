@@ -48,4 +48,4 @@ Note that it is sorted in descending order of the `st_dev_diff` column, which is
 
 ###Map
 
-![map of standard deviation in difference between ahs and mtc unit count](https://s3-us-west-2.amazonaws.com/landuse/housing/std_dev_diff_map.jpeg)
+![map of standard deviation in difference between ahs and mtc unit count](https://s3-us-west-2.amazonaws.com/landuse/housing/std_dev_diff_map2.jpeg)
