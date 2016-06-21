@@ -6,6 +6,8 @@ The goal of the scripts in this folder is to check on the unit counts in the par
 
 Below is a table of the unit counts in the AHS by SMSA and zone and those produced by the scripts in the parent directory.
 
+Beneath the table, is an image of a map of the same values. 
+
 Note that it is sorted in descending order of the `st_dev_diff` column, which is the number of standard deviations away from the AHS number the aggregated MTC number is. 
 
 | zone | smsa | ahs_units | std_err | mtc_units | st_dev_diff | 
@@ -42,3 +44,8 @@ Note that it is sorted in descending order of the `st_dev_diff` column, which is
 | 102  | 7360 | 1964      | 1567    | 2012      | 0.031       | 
 | 111  | 5775 |           |         | 4297      |             | 
 | 115  | 7360 |           |         | 2415      |             | 
+
+
+###Map
+
+![map of standard deviation in difference between ahs and mtc unit count](https://s3-us-west-2.amazonaws.com/landuse/housing/std_dev_diff_map.png)
