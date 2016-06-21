@@ -45,7 +45,11 @@ df = df.sort('units', ascending=False).groupby('Cluster ID', as_index=False).fir
 
 df.to_csv('full_selected_cluster_results.csv')
 
+df = df.sort_values(["latitude","longitude","units"])
+
+df = df.drop_duplicates(["latitude","longitude"], keep='last')
+
+df.loc[df.units==0,'units'] = df.units.median()
+df.units = df.units.fillna(df.units.median())
+
 df.to_csv('deed_restricted_units_by_location.csv',  columns=['Cluster ID','index','latitude','longitude','units'])
-
-#fourth: review cases by hand in which there are more than 1 value for units
-
