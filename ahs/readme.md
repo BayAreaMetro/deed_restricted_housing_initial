@@ -48,6 +48,8 @@ Note that it is sorted in descending order of the `st_dev_diff` column, which is
 
 ###Map
 
+Note that the units below are the number of standard deviations away from the AHS value. This metric is not ideal, for a number of reasons, but gives us someplace to start. 
+
 ![map of standard deviation in difference between ahs and mtc unit count](https://s3-us-west-2.amazonaws.com/landuse/housing/std_dev_diff_map3.png)
 
 ###Shapefile used for map
